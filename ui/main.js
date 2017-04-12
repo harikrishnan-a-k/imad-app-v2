@@ -28,7 +28,7 @@ var send= document.getElementById('send');
 					var mon = month[a.getMonth()];
 					var date=a.getDate();
 					
-					//alert("hello world "+$c);
+					
 					$prvcontent=$prvcontent+`<li>
 									<p><span class="newslist-date">${mon}  ${date}</span>` + $c+ ` </p> <p style="absolute; right:0px;">-- user_name </p>
 								</li>`;
