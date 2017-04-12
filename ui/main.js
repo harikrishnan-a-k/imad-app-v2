@@ -29,9 +29,9 @@ var send= document.getElementById('send');
 					var date=a.getDate();
 					
 					
-					$prvcontent=$prvcontent+`<li>
+					$prvcontent=`<li>
 									<p><span class="newslist-date">${mon}  ${date}</span>` + $c+ ` </p> <p style="absolute; right:0px;">-- user_name </p>
-								</li>`;
+								</li>`+$prvcontent;
 								
 				    $prv.innerHTML=$prvcontent;
 					$coment.value=null;				
