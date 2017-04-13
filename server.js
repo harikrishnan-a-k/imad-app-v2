@@ -389,7 +389,7 @@ var template=`
 app.get('/', function (req, res) {
   res.sendFile('ui/index.html' , { root : __dirname});
 });
-
+//storing and sending comments list comment
 var comments=[];
 app.get('/postcomment',function(req,res){
 	
