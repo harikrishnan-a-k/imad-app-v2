@@ -58,7 +58,7 @@ var send= document.getElementById('send');
 						request.open('GET','http://harikrishnan-a-k.imad.hasura-app.io/postcomment?comment='+$c,true);
 						request.send(null);
 					
-					//alert("hello world "+$c);
+					//alert("hello world "+$c);//
 					
 				    			
 					console.log("hello world");
