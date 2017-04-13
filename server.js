@@ -386,9 +386,7 @@ var template=`
 
 }
 
-app.get('/', function (req, res) {
-  res.sendFile('ui/index.html' , { root : __dirname});
-});
+
 //storing and sending comments list comment
 var comments=[];
 app.get('/postcomment',function(req,res){
@@ -397,6 +395,13 @@ app.get('/postcomment',function(req,res){
 	comments.push(comment);
 	res.send(JSON.stringify(comments));
 });
+
+
+
+app.get('/', function (req, res) {
+  res.sendFile('ui/index.html' , { root : __dirname});
+});
+
 
 app.get('/:articleName', function (req, res) {
 	var articleindex=req.params.articleName;
