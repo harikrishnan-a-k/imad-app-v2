@@ -44,12 +44,11 @@ var send= document.getElementById('send');
 								
 								for(i=0;i<comments.length;i++)
 								{
-								  $list += 	`<li>
-									<p><span class="newslist-date">${mon}  ${date}</span>` + comments[i]+ ` </p> <p style="absolute; right:0px;">-- user_name </p>
-								</li>`;
+								  $list += 	'<li><p><span class="newslist-date">${mon}  ${date}</span>' + comments[i] + 
+								  '</p> <p style="absolute; right:0px;">-- user_name </p></li>';
 								}
 								
-								$prv.innerHTML=$list;
+								$prv.innerHTML=list;
 								$coment.value=null;	
 							}
 							
