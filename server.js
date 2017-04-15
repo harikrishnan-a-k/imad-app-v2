@@ -391,7 +391,7 @@ var template=`
 var comments=[];
 app.get('/postcomment',function(req,res){
 	
-	var commnet=req.query.comment;
+	var comment=req.query.comment;
 	comments.push(comment);
 	res.send(JSON.stringify(comments));
 });
