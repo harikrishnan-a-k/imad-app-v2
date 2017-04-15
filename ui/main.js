@@ -6,7 +6,7 @@ var send= document.getElementById('send');
 
  function hi(){
 					
-					var coment=0,c,prv=0,prvcontent=0;
+					var coment=0,c,prv=0,prvcontent=0,comments=0,list=``;
 					$coment=document.getElementById('com');
 					$c=$coment.value;
 					$prv=document.getElementById('viewcomments');
@@ -39,12 +39,12 @@ var send= document.getElementById('send');
 							if(request.status===200)
 							{
 							
-								var comments=request.responseText;
-								comments=JSON.parse(comments);
-								var list=``;
+								$comments=request.responseText;
+								$comments=JSON.parse(comments);
+								
 								for(i=0;i<comments.length;i++)
 								{
-								  list += 	`<li>
+								  $list += 	`<li>
 									<p><span class="newslist-date">${mon}  ${date}</span>` + comments[i]+ ` </p> <p style="absolute; right:0px;">-- user_name </p>
 								</li>`;
 								}
