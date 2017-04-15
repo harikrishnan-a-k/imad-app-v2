@@ -29,6 +29,9 @@ var send= document.getElementById('send');
 					var date=a.getDate();
 					
 					var request = new XMLHttpRequest();
+					request.open('GET','http://harikrishnan-a-k.imad.hasura-app.io/postcomment?comment='+$c,true);
+					request.send(null);
+					
 					request.onreadystatechange = function(){
 						if(request.readyState===XMLHttpRequest.DONE){
 						
@@ -55,9 +58,7 @@ var send= document.getElementById('send');
 						};
 						
 						//request.open('GET','http://localhost:8080/postcomment?comment='+$c,true);
-						request.open('GET','http://harikrishnan-a-k.imad.hasura-app.io/postcomment?comment='+$c,true);
-						request.send(null);
-					
+						
 					//alert("hello world "+$c);//
 					
 				    			
