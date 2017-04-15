@@ -389,7 +389,7 @@ var template=`
 
 //storing and sending comments list comment
 var comments=[];
-app.get('/postcomment',function(req,res){
+app.get('/:postcomment',function(req,res){
 	
 	var commnet=req.query.comment;
 	comments.push(comment);
