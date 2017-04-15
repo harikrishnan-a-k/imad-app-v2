@@ -6,7 +6,7 @@ var send= document.getElementById('send');
 
  function hi(){
 					
-					var coment=0,c,prv=0,prvcontent=0,comments=0,list=``;
+					var coment=0,c,prv=0,prvcontent=0,comments=0,list=0;
 					$coment=document.getElementById('com');
 					$c=$coment.value;
 					$prv=document.getElementById('viewcomments');
