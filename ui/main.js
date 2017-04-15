@@ -38,7 +38,7 @@ var send= document.getElementById('send');
 						
 							if(request.status===200)
 							{
-							
+							    console.log("status 200");
 								$comments=request.responseText;
 								$comments=JSON.parse(comments);
 								
